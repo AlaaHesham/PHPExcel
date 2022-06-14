@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 2</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            form{
+                background-color:darksalmon;
+                margin-top: 30px;
+                height: 600px;
+                padding:30px ;
+                width: 800px;
+                border-radius: 20px;
+                border-style: solid;
+            }
+            h2{
+                margin-top: 20px ;
+                margin: 30px;
+                text-shadow: 16px 9px 5px brown ;
+            }
+            input:hover{
+                background-color: aliceblue;
+            }
+            .b:hover{
+                background-color: skyblue;
+
+            }
+            
+            select:hover{
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        
+        <form action ="queries.php" method="get" enctype="text/plain">
+            <h2>Choose what to show:</h2>
+            <input type="submit" name="all" value="Show All Flights" class="b"><br><br>
+            <input type="submit" name="already_landed" value="Show Flights That Have Already Landed" class="b"><br><br>
+            Flights That Have Come From The Same City:
+            <select name="city" >
+                <option value="Meliha">Meliha</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Ras-Shokair">Ras-Shokair</option>
+                <option value="Abu Rudies">Abu Rudies</option>
+                <option value="Jeddah">Jeddah</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Yanbu">Yanbu</option>
+                <option value="Khartoum">Khartoum</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Hurghada">Hurghada</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Erbil">Erbil</option>
+                <option value="Abha">Abha</option>
+                <option value="Amman">Amman</option>
+            </select>
+            <input type="submit" name="same_city" value="Show" class="b"><br><br>
+            Are scheduled to arrive after:
+            <input type="text" name ="time" placeholder="hh:mm:ss">
+            <input type="submit" name="scheduled_after" value="Show" class="b">
+           
+        </form>
+
+        
+    </body>
+</html>
